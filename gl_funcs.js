@@ -67,7 +67,7 @@
   this.normalize = function(v) {
     var d;
     d = mag(v);
-    if (d === 0.0) return [v[0], v[1], v[2]];
+    if (d === 0.0) return v;
     return [v[0] / d, v[1] / d, v[2] / d];
   };
 
